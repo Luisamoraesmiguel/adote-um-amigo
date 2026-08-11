@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d0e0d6;
+    color: #2f3e2f;
+}
+
+header {
+    background-color: #2f6f4e;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #f3f8f3;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #cfe8d5;
+}
+
+header h1 {
+    color: white;
+    font-size: 32px;
+}
+.inicio {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.inicio img {
+    width: 450px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.inicio h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #285c40;
+}
+
+.inicio p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #3d8b62;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.botao:hover {
+    background-color: #285c40;
+}
+
+.como-funciona {
+    background-color: white;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.como-funciona h2 {
+    font-size: 35px;
+    color: #285c40;
+    margin-bottom: 40px;
+}
+
+.passos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.passo {
+    width: 280px;
+    padding: 25px;
+    background-color: #e5f1e8;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.passo:hover {
+    transform: translateY(-8px);
+}
+
+.passo h3 {
+    margin-bottom: 15px;
+    color: #3d8b62;
+}
+
+.passo p {
+    line-height: 1.5;
+}
+
+.numero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
+    background-color: #3d8b62;
+    color: white;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.lista-animais {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-animal {
+    width: 250px;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px gray;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card-animal:hover {
+    transform: scale(1.03);
+}
+
+.card-animal img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.perfil-animal {
+    width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background-color: #e5f1e8;
+
+    border-radius: 20px;
+
+    box-shadow: 2px 2px 10px #9caf9f;
+
+    text-align: center;
+}
+
+.perfil-animal img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.perfil-animal h2 {
+    color: #285c40;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.informacoes {
+    background-color: #d0e0d6;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.informacoes p {
+    margin: 8px;
+}
+
+.informacoes strong {
+    color: #285c40;
+}
+
+h1 {
+    text-align: center;
+}
+
+.introducao {
+    text-align: center;
+}
+
+section h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+main > h1 {
+    text-align: center;
+    font-size: 42px;
+    color: #285c40;
+    margin-top: 40px;
+}
+footer {
+    background-color: #2f6f4e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+.card-animal {
+    text-align: center;
+}
+
+.card-animal .botao {
+    display: inline-block;
+    margin-top: 15px;
+}
+section {
+    padding: 20px;
+}
+
+section > h2 {
+    color: #285c40;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.lista-animais {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.card-animal {
+    background-color: #e5f1e8;
+    border: none;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px #9caf9f;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card-animal:hover {
+    transform: translateY(-5px);
+}
+
+.card-animal img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card-animal h2 {
+    color: #285c40;
+    margin: 15px 0;
+}
+
+.card-animal p {
+    margin: 5px;
+}
+body > h1 {
+    color: #285c40;
+    font-size: 38px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.sobre {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+
+    background-color: #e5f1e8;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 2px 2px 8px #9caf9f;
+}
+
+.sobre h2 {
+    color: #285c40;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.sobre p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.contato {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 40px;
+
+    background-color: #e5f1e8;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 2px 2px 8px #9caf9f;
+}
+
+.contato h2 {
+    color: #285c40;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contato > p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.dados-contato {
+    background-color: #d0e0d6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dados-contato p {
+    margin: 12px;
+}
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.contato label {
+    color: #285c40;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contato input,
+.contato select,
+.contato textarea {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #97b79a;
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+    background-color: #f3f8f3;
+}
+
+.contato textarea {
+    resize: vertical;
+}
+
+.contato button {
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.voltar {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 40px;
+
+    color: #285c40;
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.voltar:hover {
+    color: #3d8b62;
+}
