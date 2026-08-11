@@ -1,4 +1,3 @@
-```css
 /* =========================================================
    RESET
 ========================================================= */
@@ -48,9 +47,9 @@ nav {
 
 nav a {
     color: #f3f8f3;
+    text-decoration: none;
     font-size: 17px;
     white-space: nowrap;
-    transition: 0.3s;
 }
 
 nav a:hover {
@@ -59,7 +58,7 @@ nav a:hover {
 
 
 /* =========================================================
-   TÍTULOS
+   TÍTULO PRINCIPAL
 ========================================================= */
 
 main > h1 {
@@ -76,7 +75,6 @@ main > h1 {
 
 .botao {
     display: inline-block;
-
     background-color: #3d8b62;
     color: white;
 
@@ -95,7 +93,7 @@ main > h1 {
 
 
 /* =========================================================
-   INÍCIO
+   HOME - INÍCIO
 ========================================================= */
 
 .inicio {
@@ -105,6 +103,7 @@ main > h1 {
 
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
 
@@ -124,23 +123,21 @@ main > h1 {
 }
 
 .inicio h2 {
-    max-width: 900px;
-
     font-size: 34px;
-    line-height: 1.2;
 
     color: #285c40;
 
     margin-bottom: 15px;
+
+    line-height: 1.2;
 }
 
 .inicio p {
-    max-width: 600px;
-
     font-size: 18px;
-    line-height: 1.5;
 
     margin-bottom: 25px;
+
+    line-height: 1.5;
 }
 
 
@@ -161,7 +158,7 @@ main > h1 {
 
     color: #285c40;
 
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 
 .passos {
@@ -171,8 +168,6 @@ main > h1 {
     align-items: stretch;
 
     gap: 25px;
-
-    margin-top: 35px;
 }
 
 .passo {
@@ -215,8 +210,6 @@ main > h1 {
 .passo h3 {
     color: #3d8b62;
 
-    font-size: 20px;
-
     margin-bottom: 15px;
 }
 
@@ -226,7 +219,8 @@ main > h1 {
 
 
 /* =========================================================
-   DESTAQUES - HOME
+   HOME - DESTAQUES
+   DESKTOP = NORMAL
 ========================================================= */
 
 .destaques {
@@ -235,8 +229,6 @@ main > h1 {
     padding: 60px 30px;
 
     text-align: center;
-
-    overflow: hidden;
 }
 
 .destaques h2 {
@@ -251,6 +243,9 @@ main > h1 {
     margin-bottom: 35px;
 }
 
+
+/* CARDS DA HOME NO PC */
+
 .animais-destaque {
     display: flex;
 
@@ -263,8 +258,9 @@ main > h1 {
 }
 
 .card-destaque {
+    flex: 0 0 230px;
+
     width: 230px;
-    min-width: 230px;
 
     padding: 15px;
 
@@ -312,9 +308,9 @@ main > h1 {
 ========================================================= */
 
 .chamada {
-    padding: 70px 30px;
-
     text-align: center;
+
+    padding: 70px 30px;
 }
 
 .chamada h2 {
@@ -326,14 +322,15 @@ main > h1 {
 }
 
 .chamada p {
-    line-height: 1.5;
-
     margin-bottom: 25px;
+
+    line-height: 1.5;
 }
 
 
 /* =========================================================
    PÁGINA DE ANIMAIS
+   DESKTOP = GRADE
 ========================================================= */
 
 .introducao {
@@ -347,6 +344,9 @@ main > h1 {
 
     line-height: 1.6;
 }
+
+
+/* NO PC É GRID */
 
 .lista-animais {
     display: grid;
@@ -409,7 +409,7 @@ main > h1 {
 
 
 /* =========================================================
-   PERFIL DOS ANIMAIS
+   PERFIL DO ANIMAL
 ========================================================= */
 
 .perfil-animal {
@@ -527,7 +527,6 @@ main > h1 {
     display: flex;
 
     justify-content: center;
-    align-items: stretch;
 
     gap: 25px;
 
@@ -655,8 +654,6 @@ main > h1 {
     font-family: Arial, sans-serif;
 
     font-size: 15px;
-
-    background-color: white;
 }
 
 .formulario-contato textarea {
@@ -694,10 +691,14 @@ footer p {
 
 
 /* =========================================================
+   =========================================================
    MOBILE
+   A PARTIR DAQUI AS MUDANÇAS SÃO SOMENTE PARA CELULAR
+   =========================================================
 ========================================================= */
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
+
 
     /* =====================================================
        GERAL
@@ -705,7 +706,6 @@ footer p {
 
     body {
         width: 100%;
-
         overflow-x: hidden;
     }
 
@@ -715,8 +715,6 @@ footer p {
     ===================================================== */
 
     header {
-        width: 100%;
-
         padding: 16px 0;
     }
 
@@ -726,8 +724,6 @@ footer p {
         flex-direction: row;
 
         justify-content: flex-start;
-
-        align-items: center;
 
         gap: 20px;
 
@@ -754,6 +750,8 @@ footer p {
         flex-shrink: 0;
 
         font-size: 15px;
+
+        white-space: nowrap;
     }
 
 
@@ -771,13 +769,13 @@ footer p {
 
 
     /* =====================================================
-       INÍCIO
+       HOME
     ===================================================== */
 
     .inicio {
         min-height: auto;
 
-        padding: 20px 20px 50px;
+        padding: 25px 20px 50px;
     }
 
     .inicio img {
@@ -785,41 +783,27 @@ footer p {
 
         max-width: 360px;
 
-        height: 190px;
+        height: 180px;
 
-        margin: 0 auto 25px;
+        margin-bottom: 25px;
 
-        border-radius: 18px;
+        border-radius: 16px;
     }
 
     .inicio h2 {
-        width: 100%;
-
-        max-width: 350px;
-
         font-size: 27px;
 
         line-height: 1.25;
 
-        margin: 0 auto 15px;
+        max-width: 350px;
     }
 
     .inicio p {
-        width: 100%;
-
-        max-width: 330px;
-
         font-size: 17px;
 
         line-height: 1.5;
 
-        margin: 0 auto 25px;
-    }
-
-    .botao {
-        padding: 12px 20px;
-
-        font-size: 16px;
+        max-width: 330px;
     }
 
 
@@ -828,15 +812,11 @@ footer p {
     ===================================================== */
 
     .como-funciona {
-        width: 100%;
-
         padding: 45px 20px;
     }
 
     .como-funciona h2 {
-        font-size: 27px;
-
-        line-height: 1.3;
+        font-size: 28px;
 
         margin-bottom: 25px;
     }
@@ -847,36 +827,21 @@ footer p {
         align-items: center;
 
         gap: 18px;
-
-        margin-top: 0;
     }
 
     .passo {
         width: 100%;
 
         max-width: 350px;
-
-        padding: 22px 20px;
-    }
-
-    .passo h3 {
-        font-size: 19px;
-    }
-
-    .passo p {
-        font-size: 15px;
-
-        line-height: 1.5;
     }
 
 
     /* =====================================================
-       DESTAQUES DA HOME - CARROSSEL
+       HOME - ANIMAIS EM DESTAQUE
+       CARROSSEL SOMENTE MOBILE
     ===================================================== */
 
     .destaques {
-        width: 100%;
-
         padding: 45px 0 50px;
 
         overflow: hidden;
@@ -888,30 +853,22 @@ footer p {
         line-height: 1.3;
 
         padding: 0 20px;
-
-        margin-bottom: 12px;
     }
 
     .destaques > p {
         padding: 0 20px;
 
-        font-size: 16px;
-
         line-height: 1.5;
-
-        margin-bottom: 25px;
     }
 
     .animais-destaque {
-        display: flex !important;
+        display: flex;
 
-        flex-direction: row !important;
+        flex-direction: row;
 
-        flex-wrap: nowrap !important;
+        flex-wrap: nowrap;
 
-        justify-content: flex-start !important;
-
-        align-items: stretch;
+        justify-content: flex-start;
 
         gap: 16px;
 
@@ -937,15 +894,13 @@ footer p {
     }
 
     .card-destaque {
-        flex: 0 0 250px !important;
+        flex: 0 0 250px;
 
-        width: 250px !important;
+        width: 250px;
 
-        min-width: 250px !important;
+        min-width: 250px;
 
-        max-width: 250px !important;
-
-        margin: 0;
+        max-width: 250px;
 
         scroll-snap-align: start;
     }
@@ -954,18 +909,6 @@ footer p {
         width: 100%;
 
         height: 190px;
-    }
-
-    .card-destaque h3 {
-        font-size: 21px;
-
-        margin: 13px 0 7px;
-    }
-
-    .card-destaque p {
-        font-size: 15px;
-
-        margin-bottom: 12px;
     }
 
 
@@ -981,21 +924,12 @@ footer p {
         font-size: 26px;
 
         line-height: 1.3;
-
-        margin-bottom: 15px;
-    }
-
-    .chamada p {
-        font-size: 16px;
-
-        line-height: 1.5;
-
-        margin-bottom: 25px;
     }
 
 
     /* =====================================================
-       PÁGINA ANIMAIS - CARROSSEL
+       PÁGINA ANIMAIS
+       CARROSSEL SOMENTE MOBILE
     ===================================================== */
 
     .introducao {
@@ -1006,18 +940,19 @@ footer p {
         font-size: 16px;
 
         line-height: 1.5;
-
-        text-align: center;
     }
 
     .lista-animais {
-        display: flex !important;
 
-        flex-direction: row !important;
+        /* MUDA DE GRID PARA FLEX APENAS NO MOBILE */
 
-        flex-wrap: nowrap !important;
+        display: flex;
 
-        justify-content: flex-start !important;
+        flex-direction: row;
+
+        flex-wrap: nowrap;
+
+        justify-content: flex-start;
 
         align-items: stretch;
 
@@ -1045,17 +980,16 @@ footer p {
     }
 
     .lista-animais .card-animal {
-        display: block;
 
-        flex: 0 0 260px !important;
+        /* TAMANHO FIXO PARA O CARROSSEL */
 
-        width: 260px !important;
+        flex: 0 0 260px;
 
-        min-width: 260px !important;
+        width: 260px;
 
-        max-width: 260px !important;
+        min-width: 260px;
 
-        margin: 0;
+        max-width: 260px;
 
         scroll-snap-align: start;
     }
@@ -1068,9 +1002,19 @@ footer p {
         object-fit: cover;
     }
 
+    /* títulos Cachorros/Gatos */
+
+    main > section > h2 {
+        font-size: 27px;
+
+        text-align: center;
+
+        margin: 30px 0 10px;
+    }
+
 
     /* =====================================================
-       PERFIL DOS ANIMAIS
+       PERFIL ANIMAL
     ===================================================== */
 
     .perfil-animal {
@@ -1099,18 +1043,6 @@ footer p {
         font-size: 27px;
     }
 
-    .informacoes {
-        width: 100%;
-
-        padding: 15px;
-    }
-
-    .informacoes p {
-        font-size: 15px;
-
-        line-height: 1.5;
-    }
-
 
     /* =====================================================
        SOBRE
@@ -1120,18 +1052,10 @@ footer p {
         width: calc(100% - 30px);
 
         padding: 30px 15px;
-
-        margin: 0 auto;
     }
 
     .sobre h1 {
         font-size: 30px;
-
-        margin-bottom: 25px;
-    }
-
-    .sobre h2 {
-        font-size: 25px;
     }
 
     .sobre p {
@@ -1171,8 +1095,6 @@ footer p {
         width: 100%;
 
         padding: 0 20px;
-
-        margin: 30px auto 50px;
     }
 
     .info-contato,
@@ -1185,15 +1107,6 @@ footer p {
     .info-contato h2,
     .formulario-contato h2 {
         font-size: 24px;
-
-        line-height: 1.3;
-    }
-
-    .info-contato > p,
-    .formulario-contato > p {
-        font-size: 16px;
-
-        line-height: 1.5;
     }
 
     .formulario-contato input,
@@ -1210,8 +1123,6 @@ footer p {
     ===================================================== */
 
     footer {
-        width: 100%;
-
         padding: 25px 20px;
     }
 
@@ -1220,173 +1131,5 @@ footer p {
 
         line-height: 1.5;
     }
-}
-
-/* =========================================================
-   AJUSTE FINAL MOBILE
-========================================================= */
-
-@media (max-width: 700px) {
-
-    /* =========================
-       MENU
-    ========================= */
-
-    header {
-        width: 100%;
-        padding: 16px 0;
-    }
-
-    nav {
-        display: flex !important;
-        flex-direction: row !important;
-
-        justify-content: flex-start !important;
-        align-items: center;
-
-        gap: 20px;
-
-        width: 100%;
-
-        padding: 0 20px;
-
-        overflow-x: auto;
-        overflow-y: hidden;
-
-        white-space: nowrap;
-
-        scrollbar-width: none;
-
-        -webkit-overflow-scrolling: touch;
-    }
-
-    nav::-webkit-scrollbar {
-        display: none;
-    }
-
-    nav a {
-        flex: 0 0 auto;
-
-        white-space: nowrap;
-
-        font-size: 15px;
-    }
-
-
-    /* =========================
-       CARROSSEL DA HOME
-    ========================= */
-
-    .destaques {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .animais-destaque {
-        display: flex !important;
-
-        flex-direction: row !important;
-        flex-wrap: nowrap !important;
-
-        justify-content: flex-start !important;
-
-        gap: 16px;
-
-        width: 100%;
-
-        overflow-x: auto !important;
-        overflow-y: hidden;
-
-        padding: 10px 20px 30px;
-
-        margin: 0;
-
-        -webkit-overflow-scrolling: touch;
-
-        scroll-snap-type: x mandatory;
-
-        scrollbar-width: none;
-    }
-
-    .animais-destaque::-webkit-scrollbar {
-        display: none;
-    }
-
-    .animais-destaque .card-destaque {
-        flex: 0 0 250px !important;
-
-        width: 250px !important;
-        min-width: 250px !important;
-        max-width: 250px !important;
-
-        scroll-snap-align: start;
-    }
-
-
-    /* =========================
-       CARROSSEL DA PÁGINA ANIMAIS
-    ========================= */
-
-    .lista-animais {
-        display: flex !important;
-
-        flex-direction: row !important;
-        flex-wrap: nowrap !important;
-
-        justify-content: flex-start !important;
-
-        gap: 18px;
-
-        width: 100%;
-
-        overflow-x: auto !important;
-        overflow-y: hidden;
-
-        padding: 10px 20px 30px;
-
-        margin: 25px 0 40px;
-
-        -webkit-overflow-scrolling: touch;
-
-        scroll-snap-type: x mandatory;
-
-        scrollbar-width: none;
-    }
-
-    .lista-animais::-webkit-scrollbar {
-        display: none;
-    }
-
-    .lista-animais .card-animal {
-        flex: 0 0 260px !important;
-
-        width: 260px !important;
-        min-width: 260px !important;
-        max-width: 260px !important;
-
-        scroll-snap-align: start;
-    }
-
-    .lista-animais .card-animal img {
-        width: 100%;
-
-        height: 230px;
-
-        object-fit: cover;
-    }
-
-
-    /* =========================
-       SEÇÕES DE ANIMAIS
-    ========================= */
-
-    main > section > h2 {
-        font-size: 27px;
-
-        text-align: center;
-
-        margin: 30px 0 10px;
-    }
 
 }
-
