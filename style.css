@@ -405,3 +405,41 @@ body > h1 {
 .voltar:hover {
     color: #3d8b62;
 }
+.lista-animais {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0 60px;
+}
+
+.card-animal {
+    width: 250px;
+    background-color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px #b7c9bb;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card-animal:hover {
+    transform: translateY(-5px);
+}
+
+.card-animal img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card-animal h2 {
+    margin: 15px 0 10px;
+    color: #285c40;
+}
+
+.card-animal p {
+    margin: 5px;
+}
