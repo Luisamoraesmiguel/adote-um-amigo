@@ -443,3 +443,149 @@ body > h1 {
 .card-animal p {
     margin: 5px;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f3f8f3;
+    color: #2f3e2f;
+}
+
+main > h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #285c40;
+    margin: 35px 0 20px;
+}
+
+.inicio {
+    text-align: center;
+    padding: 40px 20px 70px;
+}
+
+.inicio img {
+    width: 100%;
+    max-width: 1100px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.inicio h2 {
+    font-size: 34px;
+    color: #285c40;
+    margin-bottom: 15px;
+}
+
+.inicio p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.como-funciona {
+    background-color: white;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.como-funciona h2,
+.destaques h2 {
+    font-size: 32px;
+    color: #285c40;
+    margin-bottom: 15px;
+}
+
+.passos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.passo {
+    width: 250px;
+    padding: 25px;
+    background-color: #e5f1e8;
+    border-radius: 15px;
+}
+
+.passo h3 {
+    color: #3d8b62;
+    font-size: 20px;
+}
+
+.passo p {
+    line-height: 1.5;
+}
+
+.numero {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d8b62;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.destaques {
+    background-color: #e5f1e8;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.destaques > p {
+    margin-bottom: 35px;
+}
+
+.animais-destaque {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.card-destaque {
+    width: 230px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px #b7c9bb;
+    transition: 0.3s;
+}
+
+.card-destaque:hover {
+    transform: translateY(-5px);
+}
+
+.card-destaque img {
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card-destaque h3 {
+    color: #285c40;
+    font-size: 22px;
+    margin: 15px 0 8px;
+}
+
+.chamada {
+    text-align: center;
+    padding: 70px 30px;
+}
+
+.chamada h2 {
+    color: #285c40;
+    font-size: 30px;
+}
+
+footer {
+    background-color: #2f6f4e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
