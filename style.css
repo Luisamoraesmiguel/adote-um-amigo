@@ -721,3 +721,81 @@ footer {
     margin-top: 20px;
     cursor: pointer;
 }
+@media (max-width: 700px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .inicio {
+        padding: 50px 20px;
+    }
+
+    .inicio h2 {
+        font-size: 30px;
+    }
+
+    .inicio img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+
+    .passos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .passo {
+        width: 80%;
+    }
+
+    .lista-animais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-animal {
+        width: 250px;
+    }
+
+    .perfil-animal {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .perfil-animal img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .missao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-card {
+        width: 80%;
+    }
+
+    .area-contato {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-contato,
+    .formulario-contato {
+        width: 80%;
+    }
+
+} 
