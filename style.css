@@ -589,3 +589,52 @@ footer {
     text-align: center;
     padding: 25px;
 }
+.sobre {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 30px 30px;
+    text-align: center;
+}
+
+.sobre h1 {
+    font-size: 38px;
+    color: #285c40;
+    margin-bottom: 30px;
+}
+
+.sobre h2 {
+    color: #3d8b62;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.missao {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 30px 60px;
+}
+
+.sobre-card {
+    width: 260px;
+    padding: 25px;
+    background-color: #e5f1e8;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 8px #b7c9bb;
+}
+
+.sobre-card h2 {
+    color: #285c40;
+    font-size: 22px;
+}
+
+.sobre-card p {
+    line-height: 1.5;
+}
