@@ -34,32 +34,50 @@ a {
    HEADER / MENU
 ========================================================= */
 
+/* =========================================================
+   HEADER / MENU
+========================================================= */
+
 header {
     width: 100%;
     background-color: #2f6f4e;
-    padding: 18px 20px;
+    padding: 18px 30px;
 }
 
 nav {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1150px;
     margin: 0 auto;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
-    gap: 35px;
+    gap: 30px;
 }
 
-nav a {
-    color: #f3f8f3;
-    font-size: 17px;
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
     white-space: nowrap;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-links a {
+    color: #f3f8f3;
+    font-size: 16px;
+    white-space: nowrap;
+
     transition: color 0.3s ease;
 }
 
-nav a:hover {
+.menu-links a:hover {
     color: #cfe8d5;
 }
 
@@ -791,35 +809,46 @@ footer p {
        HORIZONTAL / SEM QUEBRAR
     ===================================================== */
 
+    /* =====================================================
+   MENU MOBILE
+===================================================== */
+
     header {
         width: 100%;
-
         padding: 16px 0;
-
         overflow: hidden;
     }
 
-
     nav {
         display: flex !important;
-
-        flex-direction: row !important;
-
-        flex-wrap: nowrap !important;
-
-        justify-content: flex-start !important;
-
+        flex-direction: column !important;
         align-items: center !important;
+        justify-content: center !important;
 
-        gap: 20px;
+        gap: 15px;
+
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .menu-links {
+        display: flex;
+        flex-direction: row;
 
         width: 100%;
 
-        padding: 0 20px;
+        justify-content: flex-start;
 
-        overflow-x: auto !important;
+        gap: 20px;
 
-        overflow-y: hidden !important;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        padding: 0 5px;
 
         white-space: nowrap;
 
@@ -828,22 +857,16 @@ footer p {
         -webkit-overflow-scrolling: touch;
     }
 
-
-    nav::-webkit-scrollbar {
+    .menu-links::-webkit-scrollbar {
         display: none;
     }
 
-
-    nav a {
-        display: inline-block;
-
+    .menu-links a {
         flex: 0 0 auto;
 
-        width: auto;
+        font-size: 15px;
 
         white-space: nowrap;
-
-        font-size: 15px;
     }
 
 
