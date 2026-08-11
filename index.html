@@ -14,80 +14,117 @@
 
 <body>
 
+    <!-- CABEÇALHO -->
+
     <header>
 
         <nav>
+
             <a href="index.html">Início</a>
+
             <a href="animais.html">Animais</a>
+
             <a href="sobre.html">Sobre nós</a>
+
             <a href="contato.html">Informações de contato</a>
+
         </nav>
 
     </header>
 
+
     <main>
 
-        <h1>🐾 Adote um Amigo</h1>
+    <section class="inicio">
 
-        <section class="inicio">
+        <h2>Encontre seu novo melhor amigo 🐾</h2>
 
-            <img src="imagens/pets.jpg" alt="Cachorro e gato para adoção">
+        <p>
+            Conheça os animais que estão esperando
+            por uma família.
+        </p>
 
-            <h2>Encontre seu novo melhor amigo 🐾</h2>
+        <img src="imagens/pets.jpg" alt="Cachorro e gato para adoção">
 
-            <p>
-                Conheça os animais que estão esperando
-                por uma família.
-            </p>
+    </section>
 
-            <a class="botao" href="animais.html">
-                Ver animais disponíveis
-            </a>
 
-        </section>
 
-        <section class="como-funciona">
 
-            <h2>Como funciona?</h2>
+
+
+        <!-- =========================
+             COMO FUNCIONA
+        ========================== -->
+
+        <section class="como-funciona" id="como-funciona">
+
+            <div class="titulo-secao">
+
+                <span>ADOTAR É MAIS SIMPLES DO QUE PARECE</span>
+
+                <h2>Como funciona?</h2>
+
+                <p>
+                    Em poucos passos você pode conhecer
+                    seu futuro companheiro.
+                </p>
+
+            </div>
+
 
             <div class="passos">
 
                 <div class="passo">
 
-                    <span class="numero">1</span>
+                    <div class="numero">1</div>
 
-                    <h3>Conheça os animais</h3>
+                    <div class="passo-conteudo">
 
-                    <p>
-                        Veja os animais que estão esperando
-                        por uma família.
-                    </p>
+                        <h3>Conheça os animais</h3>
 
-                </div>
+                        <p>
+                            Veja os animais que estão
+                            esperando por uma família.
+                        </p>
 
-                <div class="passo">
-
-                    <span class="numero">2</span>
-
-                    <h3>Escolha um pet</h3>
-
-                    <p>
-                        Conheça a história e as características
-                        de cada animal.
-                    </p>
+                    </div>
 
                 </div>
 
+
                 <div class="passo">
 
-                    <span class="numero">3</span>
+                    <div class="numero">2</div>
 
-                    <h3>Entre em contato</h3>
+                    <div class="passo-conteudo">
 
-                    <p>
-                        Entre em contato com a instituição
-                        responsável pela adoção.
-                    </p>
+                        <h3>Escolha um pet</h3>
+
+                        <p>
+                            Conheça a história e as
+                            características de cada animal.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="passo">
+
+                    <div class="numero">3</div>
+
+                    <div class="passo-conteudo">
+
+                        <h3>Entre em contato</h3>
+
+                        <p>
+                            Entre em contato com a instituição
+                            responsável pela adoção.
+                        </p>
+
+                    </div>
 
                 </div>
 
@@ -95,85 +132,216 @@
 
         </section>
 
+
+        <!-- =========================
+             ANIMAIS EM DESTAQUE
+        ========================== -->
+
         <section class="destaques">
 
-            <h2>Conheça alguns dos nossos animais 🐾</h2>
+            <div class="titulo-secao">
 
-            <p>
-                Esses amigos estão esperando por uma família.
-            </p>
+                <span>CONHEÇA NOSSOS AMIGOS</span>
 
-            <div class="animais-destaque">
+                <h2>Alguns animais esperando por você 🐾</h2>
 
-                <div class="card-destaque">
+                <p>
+                    Talvez seu novo melhor amigo esteja
+                    entre eles.
+                </p>
 
-                    <img src="imagens/mel.png" alt="Foto da Mel">
+            </div>
 
-                    <h3>Mel</h3>
 
-                    <p>2 anos • Pequeno</p>
+            <div class="carrossel-container">
 
-                    <a href="mel.html" class="botao">Conhecer</a>
+                <div class="animais-destaque">
 
-                </div>
+                    <!-- MEL -->
 
-                <div class="card-destaque">
+                    <div class="card-destaque">
 
-                    <img src="imagens/celine.png" alt="Foto da Celine">
+                        <div class="card-imagem">
 
-                    <h3>Celine</h3>
+                            <img
+                                src="imagens/mel.png"
+                                alt="Foto da Mel"
+                            >
 
-                    <p>1 ano • Pequeno</p>
+                            <span class="tipo-animal">
+                                
+                            </span>
 
-                    <a href="celine.html" class="botao">Conhecer</a>
+                        </div>
 
-                </div>
+                        <div class="card-conteudo">
 
-                <div class="card-destaque">
+                            <h3>Mel</h3>
 
-                    <img src="imagens/thor.png" alt="Foto do Thor">
+                            <p>
+                               Cachorro - 2 anos • Porte pequeno
+                            </p>
 
-                    <h3>Thor</h3>
+                            <a
+                                href="mel.html"
+                                class="botao-card"
+                            >
+                                Conhecer Mel →
+                            </a>
 
-                    <p>1 ano • Médio</p>
+                        </div>
 
-                    <a href="thor.html" class="botao">Conhecer</a>
+                    </div>
+
+
+                    <!-- CELINE -->
+
+                    <div class="card-destaque">
+
+                        <div class="card-imagem">
+
+                            <img
+                                src="imagens/celine.png"
+                                alt="Foto da Celine"
+                            >
+
+                            <span class="tipo-animal">
+                                
+                            </span>
+
+                        </div>
+
+                        <div class="card-conteudo">
+
+                            <h3>Celine</h3>
+
+                            <p>
+                                Felino - 1 ano • Porte pequeno
+                            </p>
+
+                            <a
+                                href="celine.html"
+                                class="botao-card"
+                            >
+                                Conhecer Celine →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- THOR -->
+
+                    <div class="card-destaque">
+
+                        <div class="card-imagem">
+
+                            <img
+                                src="imagens/thor.png"
+                                alt="Foto do Thor"
+                            >
+
+                            <span class="tipo-animal">
+                                
+                            </span>
+
+                        </div>
+
+                        <div class="card-conteudo">
+
+                            <h3>Thor</h3>
+
+                            <p>
+                                Cachorro - 1 ano • Porte médio
+                            </p>
+
+                            <a
+                                href="thor.html"
+                                class="botao-card"
+                            >
+                                Conhecer Thor →
+                            </a>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
 
-            <a href="animais.html" class="botao">
+
+            <!-- INDICAÇÃO DO CARROSSEL NO CELULAR -->
+
+            <div class="arraste">
+
+                <span>←</span>
+
+                <p>Arraste para conhecer mais</p>
+
+                <span>→</span>
+
+            </div>
+
+
+            <a
+                href="animais.html"
+                class="botao"
+            >
                 Ver todos os animais
             </a>
 
         </section>
 
+
+        <!-- =========================
+             CHAMADA FINAL
+        ========================== -->
+
         <section class="chamada">
 
-            <h2>Pronto para encontrar seu novo amigo?</h2>
+            <div class="chamada-conteudo">
 
-            <p>
-                Dê uma chance para quem está esperando por um lar.
-            </p>
+                <span>FAÇA PARTE DESSA HISTÓRIA</span>
 
-            <a class="botao" href="animais.html">
-                Quero adotar
-            </a>
+                <h2>
+                    Pronto para encontrar
+                    seu novo amigo?
+                </h2>
+
+                <p>
+                    Dê uma chance para quem está esperando
+                    por um lar cheio de amor.
+                </p>
+
+                <a
+                    href="animais.html"
+                    class="botao"
+                >
+                    Quero adotar 🐾
+                </a>
+
+            </div>
 
         </section>
 
     </main>
+
+
+    <!-- RODAPÉ -->
 
     <footer>
 
         <p>© 2026 Adote um Amigo</p>
 
         <p>
-            Feito com carinho para ajudar animais a encontrarem um lar 🐾
+            Feito com carinho para ajudar animais
+            a encontrarem um lar 🐾
         </p>
 
     </footer>
+
 
 </body>
 

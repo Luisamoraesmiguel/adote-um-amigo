@@ -1,3 +1,4 @@
+```css
 /* =========================================================
    RESET
 ========================================================= */
@@ -30,26 +31,32 @@ a {
 
 
 /* =========================================================
-   HEADER
+   HEADER / MENU
 ========================================================= */
 
 header {
+    width: 100%;
     background-color: #2f6f4e;
-    padding: 20px;
+    padding: 18px 20px;
 }
 
 nav {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+
+    gap: 35px;
 }
 
 nav a {
     color: #f3f8f3;
-    text-decoration: none;
     font-size: 17px;
     white-space: nowrap;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -58,14 +65,14 @@ nav a:hover {
 
 
 /* =========================================================
-   TÍTULO PRINCIPAL
+   TÍTULOS
 ========================================================= */
 
 main > h1 {
     text-align: center;
     font-size: 42px;
     color: #285c40;
-    margin: 40px 20px 20px;
+    margin: 45px 20px 20px;
 }
 
 
@@ -75,31 +82,34 @@ main > h1 {
 
 .botao {
     display: inline-block;
+
     background-color: #3d8b62;
     color: white;
 
-    padding: 15px 30px;
+    padding: 14px 28px;
 
     border-radius: 10px;
 
-    font-size: 18px;
+    font-size: 17px;
 
-    transition: 0.3s;
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
 }
 
 .botao:hover {
     background-color: #285c40;
+    transform: translateY(-2px);
 }
 
 
 /* =========================================================
-   HOME - INÍCIO
+   HOME - SEÇÃO PRINCIPAL
 ========================================================= */
 
 .inicio {
-    min-height: 500px;
-
-    padding: 40px 20px 70px;
+    min-height: auto;
+    padding: 50px 20px 70px;
 
     display: flex;
     flex-direction: column;
@@ -110,56 +120,59 @@ main > h1 {
     text-align: center;
 }
 
-.inicio img {
-    width: 100%;
-    max-width: 1100px;
-    height: 300px;
-
-    object-fit: cover;
-
-    border-radius: 20px;
-
-    margin-bottom: 30px;
-}
-
 .inicio h2 {
-    font-size: 34px;
-
     color: #285c40;
-
-    margin-bottom: 15px;
-
+    font-size: 38px;
     line-height: 1.2;
+
+    margin: 0 0 18px;
 }
 
 .inicio p {
     font-size: 18px;
+    line-height: 1.6;
 
-    margin-bottom: 25px;
+    max-width: 650px;
 
-    line-height: 1.5;
+    margin: 0 auto 30px;
+}
+
+.inicio img {
+    width: 100%;
+    max-width: 800px;
+    height: 280px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 20px;
+
+    margin: 0 auto;
 }
 
 
 /* =========================================================
-   COMO FUNCIONA
+   HOME - COMO FUNCIONA
 ========================================================= */
 
 .como-funciona {
+    width: 100%;
+
     background-color: white;
 
-    padding: 60px 30px;
+    padding: 65px 30px;
 
     text-align: center;
 }
 
 .como-funciona h2 {
-    font-size: 32px;
-
     color: #285c40;
 
-    margin-bottom: 35px;
+    font-size: 32px;
+
+    margin-bottom: 40px;
 }
+
 
 .passos {
     display: flex;
@@ -168,23 +181,29 @@ main > h1 {
     align-items: stretch;
 
     gap: 25px;
+
+    max-width: 900px;
+
+    margin: 0 auto;
 }
+
 
 .passo {
     width: 250px;
 
-    padding: 25px;
+    padding: 28px 25px;
 
     background-color: #e5f1e8;
 
     border-radius: 15px;
 
-    transition: 0.3s;
+    transition: transform 0.3s ease;
 }
 
 .passo:hover {
     transform: translateY(-8px);
 }
+
 
 .numero {
     display: flex;
@@ -207,6 +226,7 @@ main > h1 {
     font-weight: bold;
 }
 
+
 .passo h3 {
     color: #3d8b62;
 
@@ -219,22 +239,24 @@ main > h1 {
 
 
 /* =========================================================
-   HOME - DESTAQUES
-   DESKTOP = NORMAL
+   HOME - ANIMAIS EM DESTAQUE
+   PC = CARDS LADO A LADO
 ========================================================= */
 
 .destaques {
+    width: 100%;
+
     background-color: #e5f1e8;
 
-    padding: 60px 30px;
+    padding: 65px 30px;
 
     text-align: center;
 }
 
 .destaques h2 {
-    font-size: 32px;
-
     color: #285c40;
+
+    font-size: 32px;
 
     margin-bottom: 15px;
 }
@@ -244,8 +266,6 @@ main > h1 {
 }
 
 
-/* CARDS DA HOME NO PC */
-
 .animais-destaque {
     display: flex;
 
@@ -254,8 +274,11 @@ main > h1 {
 
     gap: 30px;
 
-    margin-bottom: 40px;
+    max-width: 900px;
+
+    margin: 0 auto 40px;
 }
+
 
 .card-destaque {
     flex: 0 0 230px;
@@ -272,12 +295,13 @@ main > h1 {
 
     text-align: center;
 
-    transition: 0.3s;
+    transition: transform 0.3s ease;
 }
 
 .card-destaque:hover {
     transform: translateY(-5px);
 }
+
 
 .card-destaque img {
     width: 200px;
@@ -290,6 +314,7 @@ main > h1 {
     border-radius: 12px;
 }
 
+
 .card-destaque h3 {
     color: #285c40;
 
@@ -298,19 +323,22 @@ main > h1 {
     margin: 15px 0 8px;
 }
 
+
 .card-destaque p {
     margin-bottom: 12px;
 }
 
 
 /* =========================================================
-   CHAMADA FINAL
+   HOME - CHAMADA FINAL
 ========================================================= */
 
 .chamada {
+    width: 100%;
+
     text-align: center;
 
-    padding: 70px 30px;
+    padding: 75px 30px;
 }
 
 .chamada h2 {
@@ -322,15 +350,15 @@ main > h1 {
 }
 
 .chamada p {
-    margin-bottom: 25px;
-
     line-height: 1.5;
+
+    margin-bottom: 25px;
 }
 
 
 /* =========================================================
    PÁGINA DE ANIMAIS
-   DESKTOP = GRADE
+   PC = GRADE
 ========================================================= */
 
 .introducao {
@@ -346,7 +374,22 @@ main > h1 {
 }
 
 
-/* NO PC É GRID */
+main > section > h2 {
+    color: #285c40;
+
+    font-size: 30px;
+
+    text-align: center;
+
+    margin-top: 40px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   LISTA DE ANIMAIS - PC
+========================================================= */
 
 .lista-animais {
     display: grid;
@@ -362,6 +405,7 @@ main > h1 {
     padding: 0 20px;
 }
 
+
 .card-animal {
     width: 250px;
 
@@ -375,12 +419,13 @@ main > h1 {
 
     text-align: center;
 
-    transition: 0.3s;
+    transition: transform 0.3s ease;
 }
 
 .card-animal:hover {
     transform: translateY(-5px);
 }
+
 
 .card-animal img {
     width: 220px;
@@ -393,15 +438,18 @@ main > h1 {
     border-radius: 12px;
 }
 
+
 .card-animal h2 {
     color: #285c40;
 
     margin: 15px 0 10px;
 }
 
+
 .card-animal p {
     margin: 5px;
 }
+
 
 .card-animal .botao {
     margin-top: 15px;
@@ -414,6 +462,7 @@ main > h1 {
 
 .perfil-animal {
     width: 450px;
+
     max-width: calc(100% - 40px);
 
     margin: 40px auto;
@@ -429,6 +478,7 @@ main > h1 {
     text-align: center;
 }
 
+
 .perfil-animal img {
     width: 300px;
     height: 300px;
@@ -440,6 +490,7 @@ main > h1 {
     border-radius: 15px;
 }
 
+
 .perfil-animal h2 {
     color: #285c40;
 
@@ -447,6 +498,7 @@ main > h1 {
 
     margin: 20px 0;
 }
+
 
 .informacoes {
     background-color: #d0e0d6;
@@ -458,13 +510,16 @@ main > h1 {
     margin-bottom: 25px;
 }
 
+
 .informacoes p {
     margin: 8px;
 }
 
+
 .informacoes strong {
     color: #285c40;
 }
+
 
 .voltar {
     display: block;
@@ -479,6 +534,7 @@ main > h1 {
 
     font-weight: bold;
 }
+
 
 .voltar:hover {
     color: #3d8b62;
@@ -499,6 +555,7 @@ main > h1 {
     text-align: center;
 }
 
+
 .sobre h1 {
     color: #285c40;
 
@@ -506,6 +563,7 @@ main > h1 {
 
     margin-bottom: 30px;
 }
+
 
 .sobre h2 {
     color: #3d8b62;
@@ -515,6 +573,7 @@ main > h1 {
     margin-bottom: 20px;
 }
 
+
 .sobre p {
     font-size: 18px;
 
@@ -522,6 +581,7 @@ main > h1 {
 
     margin-bottom: 20px;
 }
+
 
 .missao {
     display: flex;
@@ -532,6 +592,7 @@ main > h1 {
 
     padding: 30px 30px 60px;
 }
+
 
 .sobre-card {
     width: 260px;
@@ -547,11 +608,13 @@ main > h1 {
     box-shadow: 2px 2px 8px #b7c9bb;
 }
 
+
 .sobre-card h2 {
     color: #285c40;
 
     font-size: 22px;
 }
+
 
 .sobre-card p {
     line-height: 1.5;
@@ -577,6 +640,7 @@ main > h1 {
     padding: 0 30px;
 }
 
+
 .info-contato,
 .formulario-contato {
     width: 50%;
@@ -588,13 +652,16 @@ main > h1 {
     box-shadow: 2px 2px 10px #b7c9bb;
 }
 
+
 .info-contato {
     background-color: #e5f1e8;
 }
 
+
 .formulario-contato {
     background-color: white;
 }
+
 
 .info-contato h2,
 .formulario-contato h2 {
@@ -605,6 +672,7 @@ main > h1 {
     margin-top: 0;
 }
 
+
 .info-contato > p,
 .formulario-contato > p {
     line-height: 1.6;
@@ -612,9 +680,11 @@ main > h1 {
     margin-bottom: 25px;
 }
 
+
 .dado-contato {
     margin-top: 22px;
 }
+
 
 .dado-contato h3 {
     color: #3d8b62;
@@ -622,15 +692,18 @@ main > h1 {
     margin-bottom: 5px;
 }
 
+
 .dado-contato p {
     margin: 0;
 }
+
 
 .formulario-contato form {
     display: flex;
 
     flex-direction: column;
 }
+
 
 .formulario-contato label {
     margin-top: 15px;
@@ -639,6 +712,7 @@ main > h1 {
 
     font-weight: bold;
 }
+
 
 .formulario-contato input,
 .formulario-contato select,
@@ -656,9 +730,11 @@ main > h1 {
     font-size: 15px;
 }
 
+
 .formulario-contato textarea {
     resize: vertical;
 }
+
 
 .formulario-contato .botao {
     border: none;
@@ -674,6 +750,8 @@ main > h1 {
 ========================================================= */
 
 footer {
+    width: 100%;
+
     background-color: #2f6f4e;
 
     color: white;
@@ -683,6 +761,7 @@ footer {
     padding: 25px 20px;
 }
 
+
 footer p {
     margin: 5px;
 
@@ -691,14 +770,11 @@ footer p {
 
 
 /* =========================================================
-   =========================================================
    MOBILE
-   A PARTIR DAQUI AS MUDANÇAS SÃO SOMENTE PARA CELULAR
-   =========================================================
+   ATÉ 700px
 ========================================================= */
 
 @media screen and (max-width: 700px) {
-
 
     /* =====================================================
        GERAL
@@ -712,439 +788,17 @@ footer p {
 
     /* =====================================================
        MENU MOBILE
+       HORIZONTAL / SEM QUEBRAR
     ===================================================== */
 
     header {
+        width: 100%;
+
         padding: 16px 0;
-    }
-
-    nav {
-        display: flex;
-
-        flex-direction: row;
-
-        justify-content: flex-start;
-
-        gap: 20px;
-
-        width: 100%;
-
-        padding: 0 20px;
-
-        overflow-x: auto;
-
-        overflow-y: hidden;
-
-        white-space: nowrap;
-
-        scrollbar-width: none;
-
-        -webkit-overflow-scrolling: touch;
-    }
-
-    nav::-webkit-scrollbar {
-        display: none;
-    }
-
-    nav a {
-        flex-shrink: 0;
-
-        font-size: 15px;
-
-        white-space: nowrap;
-    }
-
-
-    /* =====================================================
-       TÍTULO
-    ===================================================== */
-
-    main > h1 {
-        font-size: 30px;
-
-        line-height: 1.2;
-
-        margin: 30px 15px 15px;
-    }
-
-
-    /* =====================================================
-       HOME
-    ===================================================== */
-
-    .inicio {
-        min-height: auto;
-
-        padding: 25px 20px 50px;
-    }
-
-    .inicio img {
-        width: 100%;
-
-        max-width: 360px;
-
-        height: 180px;
-
-        margin-bottom: 25px;
-
-        border-radius: 16px;
-    }
-
-    .inicio h2 {
-        font-size: 27px;
-
-        line-height: 1.25;
-
-        max-width: 350px;
-    }
-
-    .inicio p {
-        font-size: 17px;
-
-        line-height: 1.5;
-
-        max-width: 330px;
-    }
-
-
-    /* =====================================================
-       COMO FUNCIONA
-    ===================================================== */
-
-    .como-funciona {
-        padding: 45px 20px;
-    }
-
-    .como-funciona h2 {
-        font-size: 28px;
-
-        margin-bottom: 25px;
-    }
-
-    .passos {
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 18px;
-    }
-
-    .passo {
-        width: 100%;
-
-        max-width: 350px;
-    }
-
-
-    /* =====================================================
-       HOME - ANIMAIS EM DESTAQUE
-       CARROSSEL SOMENTE MOBILE
-    ===================================================== */
-
-    .destaques {
-        padding: 45px 0 50px;
 
         overflow: hidden;
     }
 
-    .destaques h2 {
-        font-size: 27px;
-
-        line-height: 1.3;
-
-        padding: 0 20px;
-    }
-
-    .destaques > p {
-        padding: 0 20px;
-
-        line-height: 1.5;
-    }
-
-    .animais-destaque {
-        display: flex;
-
-        flex-direction: row;
-
-        flex-wrap: nowrap;
-
-        justify-content: flex-start;
-
-        gap: 16px;
-
-        width: 100%;
-
-        padding: 10px 20px 30px;
-
-        margin: 0;
-
-        overflow-x: auto;
-
-        overflow-y: hidden;
-
-        scroll-snap-type: x mandatory;
-
-        -webkit-overflow-scrolling: touch;
-
-        scrollbar-width: none;
-    }
-
-    .animais-destaque::-webkit-scrollbar {
-        display: none;
-    }
-
-    .card-destaque {
-        flex: 0 0 250px;
-
-        width: 250px;
-
-        min-width: 250px;
-
-        max-width: 250px;
-
-        scroll-snap-align: start;
-    }
-
-    .card-destaque img {
-        width: 100%;
-
-        height: 190px;
-    }
-
-
-    /* =====================================================
-       CHAMADA
-    ===================================================== */
-
-    .chamada {
-        padding: 50px 20px;
-    }
-
-    .chamada h2 {
-        font-size: 26px;
-
-        line-height: 1.3;
-    }
-
-
-    /* =====================================================
-       PÁGINA ANIMAIS
-       CARROSSEL SOMENTE MOBILE
-    ===================================================== */
-
-    .introducao {
-        width: 100%;
-
-        padding: 0 25px;
-
-        font-size: 16px;
-
-        line-height: 1.5;
-    }
-
-    .lista-animais {
-
-        /* MUDA DE GRID PARA FLEX APENAS NO MOBILE */
-
-        display: flex;
-
-        flex-direction: row;
-
-        flex-wrap: nowrap;
-
-        justify-content: flex-start;
-
-        align-items: stretch;
-
-        gap: 18px;
-
-        width: 100%;
-
-        padding: 10px 20px 30px;
-
-        margin: 25px 0 40px;
-
-        overflow-x: auto;
-
-        overflow-y: hidden;
-
-        scroll-snap-type: x mandatory;
-
-        -webkit-overflow-scrolling: touch;
-
-        scrollbar-width: none;
-    }
-
-    .lista-animais::-webkit-scrollbar {
-        display: none;
-    }
-
-    .lista-animais .card-animal {
-
-        /* TAMANHO FIXO PARA O CARROSSEL */
-
-        flex: 0 0 260px;
-
-        width: 260px;
-
-        min-width: 260px;
-
-        max-width: 260px;
-
-        scroll-snap-align: start;
-    }
-
-    .lista-animais .card-animal img {
-        width: 100%;
-
-        height: 230px;
-
-        object-fit: cover;
-    }
-
-    /* títulos Cachorros/Gatos */
-
-    main > section > h2 {
-        font-size: 27px;
-
-        text-align: center;
-
-        margin: 30px 0 10px;
-    }
-
-
-    /* =====================================================
-       PERFIL ANIMAL
-    ===================================================== */
-
-    .perfil-animal {
-        width: calc(100% - 40px);
-
-        max-width: 400px;
-
-        margin: 30px auto;
-
-        padding: 20px;
-    }
-
-    .perfil-animal img {
-        width: 100%;
-
-        max-width: 300px;
-
-        height: auto;
-
-        aspect-ratio: 1 / 1;
-
-        margin: 0 auto;
-    }
-
-    .perfil-animal h2 {
-        font-size: 27px;
-    }
-
-
-    /* =====================================================
-       SOBRE
-    ===================================================== */
-
-    .sobre {
-        width: calc(100% - 30px);
-
-        padding: 30px 15px;
-    }
-
-    .sobre h1 {
-        font-size: 30px;
-    }
-
-    .sobre p {
-        font-size: 16px;
-
-        line-height: 1.6;
-    }
-
-    .missao {
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 20px;
-
-        padding: 20px;
-    }
-
-    .sobre-card {
-        width: 100%;
-
-        max-width: 350px;
-    }
-
-
-    /* =====================================================
-       CONTATO
-    ===================================================== */
-
-    .area-contato {
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 25px;
-
-        width: 100%;
-
-        padding: 0 20px;
-    }
-
-    .info-contato,
-    .formulario-contato {
-        width: 100%;
-
-        padding: 25px;
-    }
-
-    .info-contato h2,
-    .formulario-contato h2 {
-        font-size: 24px;
-    }
-
-    .formulario-contato input,
-    .formulario-contato select,
-    .formulario-contato textarea {
-        width: 100%;
-
-        font-size: 16px;
-    }
-
-
-    /* =====================================================
-       FOOTER
-    ===================================================== */
-
-    footer {
-        padding: 25px 20px;
-    }
-
-    footer p {
-        font-size: 14px;
-
-        line-height: 1.5;
-    }
-
-}
-
-/* =========================================================
-   MENU MOBILE
-========================================================= */
-
-@media screen and (max-width: 700px) {
-
-    header {
-        width: 100%;
-        padding: 16px 0;
-        overflow: hidden;
-    }
 
     nav {
         display: flex !important;
@@ -1174,20 +828,467 @@ footer p {
         -webkit-overflow-scrolling: touch;
     }
 
+
     nav::-webkit-scrollbar {
         display: none;
     }
 
+
     nav a {
-        display: inline-block !important;
+        display: inline-block;
 
-        flex: 0 0 auto !important;
+        flex: 0 0 auto;
 
-        width: auto !important;
+        width: auto;
 
-        white-space: nowrap !important;
+        white-space: nowrap;
 
         font-size: 15px;
+    }
+
+
+    /* =====================================================
+       TÍTULO
+    ===================================================== */
+
+    main > h1 {
+        font-size: 30px;
+
+        line-height: 1.2;
+
+        margin: 30px 15px 15px;
+    }
+
+
+    /* =====================================================
+       BOTÕES
+    ===================================================== */
+
+    .botao {
+        padding: 13px 22px;
+
+        font-size: 16px;
+    }
+
+
+    /* =====================================================
+       HOME - INÍCIO
+    ===================================================== */
+
+    .inicio {
+        min-height: auto;
+
+        padding: 25px 20px 50px;
+    }
+
+
+    .inicio img {
+        width: 100%;
+
+        max-width: 360px;
+
+        /*
+           No celular a imagem fica mais baixa
+           para não ocupar a tela inteira.
+        */
+        aspect-ratio: 16 / 9;
+
+        height: auto;
+
+        object-fit: cover;
+
+        object-position: center;
+
+        border-radius: 16px;
+
+        margin: 0 auto 25px;
+    }
+
+
+    .inicio h2 {
+        font-size: 27px;
+
+        line-height: 1.25;
+
+        max-width: 350px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .inicio p {
+        font-size: 17px;
+
+        line-height: 1.5;
+
+        max-width: 330px;
+
+        margin-bottom: 25px;
+    }
+
+
+    /* =====================================================
+       COMO FUNCIONA
+    ===================================================== */
+
+    .como-funciona {
+        padding: 45px 20px;
+    }
+
+
+    .como-funciona h2 {
+        font-size: 28px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .passos {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 18px;
+    }
+
+
+    .passo {
+        width: 100%;
+
+        max-width: 350px;
+
+        padding: 25px 20px;
+    }
+
+
+    /* =====================================================
+       HOME - ANIMAIS
+       CARROSSEL SOMENTE NO CELULAR
+    ===================================================== */
+
+    .destaques {
+        padding: 45px 0 50px;
+
+        overflow: hidden;
+    }
+
+
+    .destaques h2 {
+        font-size: 27px;
+
+        line-height: 1.3;
+
+        padding: 0 20px;
+    }
+
+
+    .destaques > p {
+        padding: 0 20px;
+
+        line-height: 1.5;
+
+        margin-bottom: 20px;
+    }
+
+
+    .animais-destaque {
+        display: flex;
+
+        flex-direction: row;
+
+        flex-wrap: nowrap;
+
+        justify-content: flex-start;
+
+        align-items: stretch;
+
+        gap: 16px;
+
+        width: 100%;
+
+        padding: 10px 20px 30px;
+
+        margin: 0;
+
+        overflow-x: auto;
+
+        overflow-y: hidden;
+
+        scroll-snap-type: x mandatory;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+    }
+
+
+    .animais-destaque::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .card-destaque {
+        flex: 0 0 250px;
+
+        width: 250px;
+
+        min-width: 250px;
+
+        max-width: 250px;
+
+        scroll-snap-align: start;
+    }
+
+
+    .card-destaque img {
+        width: 100%;
+
+        height: 190px;
+
+        object-fit: cover;
+    }
+
+
+    /* =====================================================
+       HOME - CHAMADA FINAL
+    ===================================================== */
+
+    .chamada {
+        padding: 50px 20px;
+    }
+
+
+    .chamada h2 {
+        font-size: 26px;
+
+        line-height: 1.3;
+
+        margin-bottom: 15px;
+    }
+
+
+    .chamada p {
+        line-height: 1.5;
+
+        margin-bottom: 25px;
+    }
+
+
+    /* =====================================================
+       PÁGINA DE ANIMAIS
+       CARROSSEL SOMENTE NO CELULAR
+    ===================================================== */
+
+    .introducao {
+        width: 100%;
+
+        padding: 0 25px;
+
+        font-size: 16px;
+
+        line-height: 1.5;
+    }
+
+
+    main > section > h2 {
+        font-size: 27px;
+
+        margin: 30px 0 10px;
+    }
+
+
+    .lista-animais {
+        display: flex;
+
+        flex-direction: row;
+
+        flex-wrap: nowrap;
+
+        justify-content: flex-start;
+
+        align-items: stretch;
+
+        gap: 18px;
+
+        width: 100%;
+
+        padding: 10px 20px 30px;
+
+        margin: 25px 0 40px;
+
+        overflow-x: auto;
+
+        overflow-y: hidden;
+
+        scroll-snap-type: x mandatory;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+    }
+
+
+    .lista-animais::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .lista-animais .card-animal {
+        flex: 0 0 260px;
+
+        width: 260px;
+
+        min-width: 260px;
+
+        max-width: 260px;
+
+        scroll-snap-align: start;
+    }
+
+
+    .lista-animais .card-animal img {
+        width: 100%;
+
+        height: 230px;
+
+        object-fit: cover;
+    }
+
+
+    /* =====================================================
+       PERFIL DO ANIMAL
+    ===================================================== */
+
+    .perfil-animal {
+        width: calc(100% - 40px);
+
+        max-width: 400px;
+
+        margin: 30px auto;
+
+        padding: 20px;
+    }
+
+
+    .perfil-animal img {
+        width: 100%;
+
+        max-width: 300px;
+
+        height: auto;
+
+        aspect-ratio: 1 / 1;
+
+        margin: 0 auto;
+    }
+
+
+    .perfil-animal h2 {
+        font-size: 27px;
+    }
+
+
+    /* =====================================================
+       SOBRE
+    ===================================================== */
+
+    .sobre {
+        width: calc(100% - 30px);
+
+        padding: 30px 15px;
+    }
+
+
+    .sobre h1 {
+        font-size: 30px;
+    }
+
+
+    .sobre h2 {
+        font-size: 25px;
+    }
+
+
+    .sobre p {
+        font-size: 16px;
+
+        line-height: 1.6;
+    }
+
+
+    .missao {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+
+    .sobre-card {
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+
+    /* =====================================================
+       CONTATO
+    ===================================================== */
+
+    .area-contato {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 25px;
+
+        width: 100%;
+
+        padding: 0 20px;
+    }
+
+
+    .info-contato,
+    .formulario-contato {
+        width: 100%;
+
+        padding: 25px;
+    }
+
+
+    .info-contato h2,
+    .formulario-contato h2 {
+        font-size: 24px;
+    }
+
+
+    .formulario-contato input,
+    .formulario-contato select,
+    .formulario-contato textarea {
+        width: 100%;
+
+        font-size: 16px;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    footer {
+        padding: 25px 20px;
+    }
+
+
+    footer p {
+        font-size: 14px;
+
+        line-height: 1.5;
     }
 }
 
