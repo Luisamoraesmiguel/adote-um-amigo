@@ -22,6 +22,7 @@ body {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 a {
@@ -30,7 +31,7 @@ a {
 
 
 /* =========================================================
-   HEADER / MENU
+   HEADER
 ========================================================= */
 
 header {
@@ -48,6 +49,7 @@ nav {
 nav a {
     color: #f3f8f3;
     font-size: 17px;
+    white-space: nowrap;
     transition: 0.3s;
 }
 
@@ -57,7 +59,7 @@ nav a:hover {
 
 
 /* =========================================================
-   TÍTULOS GERAIS
+   TÍTULOS
 ========================================================= */
 
 main > h1 {
@@ -67,10 +69,6 @@ main > h1 {
     margin: 40px 20px 20px;
 }
 
-section > h2 {
-    color: #285c40;
-}
-
 
 /* =========================================================
    BOTÕES
@@ -78,11 +76,16 @@ section > h2 {
 
 .botao {
     display: inline-block;
+
     background-color: #3d8b62;
     color: white;
+
     padding: 15px 30px;
+
     border-radius: 10px;
+
     font-size: 18px;
+
     transition: 0.3s;
 }
 
@@ -92,13 +95,12 @@ section > h2 {
 
 
 /* =========================================================
-   PÁGINA INICIAL
+   INÍCIO
 ========================================================= */
-
-/* ---------- Seção principal ---------- */
 
 .inicio {
     min-height: 500px;
+
     padding: 40px 20px 70px;
 
     display: flex;
@@ -110,12 +112,12 @@ section > h2 {
 }
 
 .inicio img {
-    display: block;
     width: 100%;
     max-width: 1100px;
     height: 300px;
 
     object-fit: cover;
+
     border-radius: 20px;
 
     margin-bottom: 30px;
@@ -156,11 +158,15 @@ section > h2 {
 
 .como-funciona h2 {
     font-size: 32px;
+
+    color: #285c40;
+
     margin-bottom: 15px;
 }
 
 .passos {
     display: flex;
+
     justify-content: center;
     align-items: stretch;
 
@@ -197,6 +203,7 @@ section > h2 {
     margin: 0 auto 20px;
 
     background-color: #3d8b62;
+
     color: white;
 
     border-radius: 50%;
@@ -207,6 +214,7 @@ section > h2 {
 
 .passo h3 {
     color: #3d8b62;
+
     font-size: 20px;
 
     margin-bottom: 15px;
@@ -218,7 +226,7 @@ section > h2 {
 
 
 /* =========================================================
-   DESTAQUES DA PÁGINA INICIAL
+   DESTAQUES - HOME
 ========================================================= */
 
 .destaques {
@@ -245,6 +253,7 @@ section > h2 {
 
 .animais-destaque {
     display: flex;
+
     justify-content: center;
     align-items: stretch;
 
@@ -255,7 +264,7 @@ section > h2 {
 
 .card-destaque {
     width: 230px;
-    flex-shrink: 0;
+    min-width: 230px;
 
     padding: 15px;
 
@@ -275,8 +284,6 @@ section > h2 {
 }
 
 .card-destaque img {
-    display: block;
-
     width: 200px;
     height: 180px;
 
@@ -319,8 +326,9 @@ section > h2 {
 }
 
 .chamada p {
-    margin-bottom: 25px;
     line-height: 1.5;
+
+    margin-bottom: 25px;
 }
 
 
@@ -375,8 +383,6 @@ section > h2 {
 }
 
 .card-animal img {
-    display: block;
-
     width: 220px;
     height: 220px;
 
@@ -403,7 +409,7 @@ section > h2 {
 
 
 /* =========================================================
-   PERFIL DO ANIMAL
+   PERFIL DOS ANIMAIS
 ========================================================= */
 
 .perfil-animal {
@@ -426,6 +432,8 @@ section > h2 {
 .perfil-animal img {
     width: 300px;
     height: 300px;
+
+    margin: 0 auto;
 
     object-fit: cover;
 
@@ -468,6 +476,7 @@ section > h2 {
     color: #285c40;
 
     font-size: 17px;
+
     font-weight: bold;
 }
 
@@ -477,7 +486,7 @@ section > h2 {
 
 
 /* =========================================================
-   PÁGINA SOBRE
+   SOBRE
 ========================================================= */
 
 .sobre {
@@ -551,7 +560,7 @@ section > h2 {
 
 
 /* =========================================================
-   PÁGINA DE CONTATO
+   CONTATO
 ========================================================= */
 
 .area-contato {
@@ -618,9 +627,6 @@ section > h2 {
     margin: 0;
 }
 
-
-/* ---------- Formulário ---------- */
-
 .formulario-contato form {
     display: flex;
 
@@ -629,11 +635,10 @@ section > h2 {
 
 .formulario-contato label {
     margin-top: 15px;
+
     margin-bottom: 6px;
 
     font-weight: bold;
-
-    color: #2f3e2f;
 }
 
 .formulario-contato input,
@@ -648,6 +653,7 @@ section > h2 {
     border-radius: 8px;
 
     font-family: Arial, sans-serif;
+
     font-size: 15px;
 
     background-color: white;
@@ -693,48 +699,85 @@ footer p {
 
 @media (max-width: 700px) {
 
-    /* ---------- GERAL ---------- */
+    /* =====================================================
+       GERAL
+    ===================================================== */
 
     body {
         width: 100%;
+
         overflow-x: hidden;
     }
 
 
-    /* ---------- HEADER ---------- */
+    /* =====================================================
+       MENU MOBILE
+    ===================================================== */
 
     header {
-        padding: 18px 15px;
+        width: 100%;
+
+        padding: 16px 0;
     }
 
     nav {
-        flex-direction: column;
+        display: flex;
 
-        gap: 12px;
+        flex-direction: row;
+
+        justify-content: flex-start;
+
+        align-items: center;
+
+        gap: 20px;
+
+        width: 100%;
+
+        padding: 0 20px;
+
+        overflow-x: auto;
+
+        overflow-y: hidden;
+
+        white-space: nowrap;
+
+        scrollbar-width: none;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    nav::-webkit-scrollbar {
+        display: none;
     }
 
     nav a {
-        font-size: 16px;
+        flex-shrink: 0;
+
+        font-size: 15px;
     }
 
 
-    /* ---------- TÍTULOS ---------- */
+    /* =====================================================
+       TÍTULO
+    ===================================================== */
 
     main > h1 {
         font-size: 30px;
 
         line-height: 1.2;
 
-        margin: 30px 15px 10px;
+        margin: 30px 15px 15px;
     }
 
 
-    /* ---------- INÍCIO ---------- */
+    /* =====================================================
+       INÍCIO
+    ===================================================== */
 
     .inicio {
         min-height: auto;
 
-        padding: 25px 20px 50px;
+        padding: 20px 20px 50px;
     }
 
     .inicio img {
@@ -780,9 +823,13 @@ footer p {
     }
 
 
-    /* ---------- COMO FUNCIONA ---------- */
+    /* =====================================================
+       COMO FUNCIONA
+    ===================================================== */
 
     .como-funciona {
+        width: 100%;
+
         padding: 45px 20px;
     }
 
@@ -823,7 +870,9 @@ footer p {
     }
 
 
-    /* ---------- DESTAQUES ---------- */
+    /* =====================================================
+       DESTAQUES DA HOME - CARROSSEL
+    ===================================================== */
 
     .destaques {
         width: 100%;
@@ -853,17 +902,14 @@ footer p {
         margin-bottom: 25px;
     }
 
-
-    /* ---------- CARROSSEL DOS ANIMAIS ---------- */
-
     .animais-destaque {
-        display: flex;
+        display: flex !important;
 
-        flex-direction: row;
+        flex-direction: row !important;
 
-        flex-wrap: nowrap;
+        flex-wrap: nowrap !important;
 
-        justify-content: flex-start;
+        justify-content: flex-start !important;
 
         align-items: stretch;
 
@@ -871,13 +917,13 @@ footer p {
 
         width: 100%;
 
+        padding: 10px 20px 30px;
+
+        margin: 0;
+
         overflow-x: auto;
 
         overflow-y: hidden;
-
-        padding: 10px 20px 25px;
-
-        margin: 0;
 
         scroll-snap-type: x mandatory;
 
@@ -891,13 +937,13 @@ footer p {
     }
 
     .card-destaque {
-        flex: 0 0 250px;
+        flex: 0 0 250px !important;
 
-        width: 250px;
+        width: 250px !important;
 
-        min-width: 250px;
+        min-width: 250px !important;
 
-        padding: 15px;
+        max-width: 250px !important;
 
         margin: 0;
 
@@ -908,8 +954,6 @@ footer p {
         width: 100%;
 
         height: 190px;
-
-        object-fit: cover;
     }
 
     .card-destaque h3 {
@@ -924,12 +968,10 @@ footer p {
         margin-bottom: 12px;
     }
 
-    .destaques > .botao {
-        margin-top: 5px;
-    }
 
-
-    /* ---------- CHAMADA ---------- */
+    /* =====================================================
+       CHAMADA
+    ===================================================== */
 
     .chamada {
         padding: 50px 20px;
@@ -953,40 +995,49 @@ footer p {
 
 
     /* =====================================================
-       PÁGINA DE ANIMAIS - MOBILE
+       PÁGINA ANIMAIS - CARROSSEL
     ===================================================== */
 
     .introducao {
+        width: 100%;
+
         padding: 0 25px;
 
         font-size: 16px;
 
         line-height: 1.5;
+
+        text-align: center;
     }
 
     .lista-animais {
-    display: flex;
+        display: flex !important;
 
-    flex-direction: row;
-    flex-wrap: nowrap;
+        flex-direction: row !important;
 
-    justify-content: flex-start;
-    align-items: stretch;
+        flex-wrap: nowrap !important;
 
-    gap: 16px;
+        justify-content: flex-start !important;
 
-    width: 100%;
+        align-items: stretch;
 
-    overflow-x: auto;
-    overflow-y: hidden;
+        gap: 18px;
 
-    padding: 10px 20px 30px;
-    margin: 25px 0 40px;
+        width: 100%;
 
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+        padding: 10px 20px 30px;
 
-    scrollbar-width: none;
+        margin: 25px 0 40px;
+
+        overflow-x: auto;
+
+        overflow-y: hidden;
+
+        scroll-snap-type: x mandatory;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
     }
 
     .lista-animais::-webkit-scrollbar {
@@ -994,34 +1045,32 @@ footer p {
     }
 
     .lista-animais .card-animal {
-        flex: 0 0 260px;
+        display: block;
 
-        width: 260px;
-        min-width: 260px;
+        flex: 0 0 260px !important;
+
+        width: 260px !important;
+
+        min-width: 260px !important;
+
+        max-width: 260px !important;
+
+        margin: 0;
 
         scroll-snap-align: start;
     }
 
     .lista-animais .card-animal img {
         width: 100%;
+
         height: 230px;
 
         object-fit: cover;
     }
 
-    .card-animal {
-        padding: 15px;
-    }
-
-    .card-animal img {
-        width: 100%;
-
-        height: 230px;
-    }
-
 
     /* =====================================================
-       PERFIL DO ANIMAL - MOBILE
+       PERFIL DOS ANIMAIS
     ===================================================== */
 
     .perfil-animal {
@@ -1042,6 +1091,8 @@ footer p {
         height: auto;
 
         aspect-ratio: 1 / 1;
+
+        margin: 0 auto;
     }
 
     .perfil-animal h2 {
@@ -1062,7 +1113,7 @@ footer p {
 
 
     /* =====================================================
-       SOBRE - MOBILE
+       SOBRE
     ===================================================== */
 
     .sobre {
@@ -1107,7 +1158,7 @@ footer p {
 
 
     /* =====================================================
-       CONTATO - MOBILE
+       CONTATO
     ===================================================== */
 
     .area-contato {
@@ -1154,9 +1205,13 @@ footer p {
     }
 
 
-    /* ---------- FOOTER ---------- */
+    /* =====================================================
+       FOOTER
+    ===================================================== */
 
     footer {
+        width: 100%;
+
         padding: 25px 20px;
     }
 
